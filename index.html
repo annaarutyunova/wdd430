@@ -3,12 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./output.css" rel="stylesheet">
-  <script src="index.js"></script>
+  <link href="./src/output.css" rel="stylesheet">
+  <script defer src="./src/index.js"></script>
 </head>
-<body>
-  <h1 class="text-3xl font-bold text-yellow-400">
-    Hello world!
-  </h1>
+<body class="p-0 m-0 flex h-screen w-screen justify-center items-start">
+  <div class="container p-5 max-w-[700px]">
+
+    <h1 class="text-xl font-bold mb-10">Guess things about Anna that you don't actually want to know</h1>
+
+    <div id="question-container" class="hidden">
+      <div id="question" class="font-bold mb-10">Question</div>
+      <div id="answers-container" class="flex flex-col gap-6 items-baseline">
+        <button>Answer1</button>
+        <button>Answer2</button>
+        <button>Answer3</button>
+        <button>Answer4</button>
+      </div>
+
+    </div>
+    <div class="controls">
+      <button id="start-btn">Start Quiz</button>
+      <button id="next-btn" class="hidden mt-10">Next</button>
+      <!-- <button id="refuse-btn">No, thanks</button> -->
+    </div>
+  </div>
 </body>
 </html>
